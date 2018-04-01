@@ -1,6 +1,6 @@
 import {
     ADD_RECIPE,
-    REMOVE_FROM_CALANDAR
+    REMOVE_FROM_CALENDAR
 } from '../actions';
 
 const initialCalendarState = {
@@ -53,7 +53,7 @@ function calendar (state = initialCalendarState, action)  {
                     [meal]: recipe.label
                 }
             }
-        case REMOVE_FROM_CALANDAR:
+        case REMOVE_FROM_CALENDAR:
             return {
                 ...state,
                 [day]: {
